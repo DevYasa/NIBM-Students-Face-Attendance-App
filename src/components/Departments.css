@@ -1,30 +1,38 @@
 /* src/components/Departments.css */
-.departments-container {
-    padding: 20px;
-  }
-  
-  input {
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 10px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    padding: 10px;
-    margin: 10px 0;
-    background: #f0f0f0;
-  }
-  
-  li button {
-    margin-left: 10px;
-    padding: 5px 10px;
-  }
-  
+.departments {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.department-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.department-form input {
+  padding: 10px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.department-form button {
+  padding: 10px;
+}
+
+.department-list {
+  list-style: none;
+  padding: 0;
+}
+
+.department-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ecf0f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.department-list li button {
+  padding: 5px 10px;
+}

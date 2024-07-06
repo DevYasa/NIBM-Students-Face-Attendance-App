@@ -1,0 +1,39 @@
+/* src/components/Batches.css */
+.batches {
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
+  .batch-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .batch-form input {
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .batch-form button {
+    padding: 10px;
+  }
+  
+  .batch-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .batch-list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .batch-list li button {
+    padding: 5px 10px;
+  }
+  
