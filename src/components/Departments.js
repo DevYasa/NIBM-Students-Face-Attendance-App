@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Departments.css';
+import Sidebar from './Sidebar';
 
 const Departments = () => {
   const [departments, setDepartments] = useState([]);
@@ -29,6 +30,7 @@ const Departments = () => {
 
   return (
     <div className="departments">
+      <Sidebar />
       <h1>Departments</h1>
       <div className="department-form">
         <input

@@ -47,7 +47,47 @@ const Dashboard = () => {
                 <td>7/7/2024</td>
                 <td>08:25 AM</td>
                 <td>IT</td>
-                <td>23.2F</td>
+                <td>MAHNDSE23.2F</td>
+              </tr>
+              <tr>
+                <td>MAHNDSE23.2F-02</td>
+                <td>PATHUM</td>
+                <td>7/7/2024</td>
+                <td>08:26 AM</td>
+                <td>IT</td>
+                <td>MAHNDSE23.2F</td>
+              </tr>
+              <tr>
+                <td>MAHNDSE23.2F-03</td>
+                <td>SAMEERA</td>
+                <td>7/7/2024</td>
+                <td>08:25 AM</td>
+                <td>IT</td>
+                <td>MAHNDSE23.2F</td>
+              </tr>
+              <tr>
+                <td>MAHNDSE23.2F-04</td>
+                <td>PATHUM</td>
+                <td>7/7/2024</td>
+                <td>08:26 AM</td>
+                <td>IT</td>
+                <td>MAHNDSE23.2F</td>
+              </tr>
+              <tr>
+                <td>MAHNDSE23.2F-05</td>
+                <td>SAMEERA</td>
+                <td>7/7/2024</td>
+                <td>08:25 AM</td>
+                <td>IT</td>
+                <td>MAHNDSE23.2F</td>
+              </tr>
+              <tr>
+                <td>MAHNDSE23.2F-06</td>
+                <td>PATHUM</td>
+                <td>7/7/2024</td>
+                <td>08:26 AM</td>
+                <td>IT</td>
+                <td>MAHNDSE23.2F</td>
               </tr>
             </tbody>
           </table>

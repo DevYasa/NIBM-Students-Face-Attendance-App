@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Batches.css';
+import Sidebar from './Sidebar';
 
 const Batches = () => {
   const [batches, setBatches] = useState([]);
@@ -31,6 +32,7 @@ const Batches = () => {
 
   return (
     <div className="batches">
+      <Sidebar />
       <h1>Batches</h1>
       <div className="batch-form">
         <input
