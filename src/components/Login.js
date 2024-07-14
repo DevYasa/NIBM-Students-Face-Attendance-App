@@ -1,6 +1,6 @@
 // src/components/Login.js
 import React, { useState } from 'react';
-import { FaEye, FaEyeSlash, FaUser, FaLock } from 'react-icons/fa';
+import { FaEye, FaEyeSlash, FaArrowLeft } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
@@ -13,7 +13,6 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // handle login logic here
     const validUsername = "admin"; // replace with your username
     const validPassword = "admin123"; // replace with your password
 
@@ -30,14 +29,21 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
 
+  const handleBack = () => {
+    navigate('/attendance');
+  };
+
   return (
     <div className="login-container">
+      
       <div className="login-box">
+      <button className="back-button" onClick={handleBack}>
+        <FaArrowLeft />
+      </button>
         <img src="/nibm-logo.png" alt="NIBM Logo" className="logo" />
         <form onSubmit={handleLogin}>
           <label>Username</label>
           <div className="input-container">
-            <FaUser className="icon" />
             <input
               type="text"
               placeholder="Insert Your Username"
@@ -48,7 +54,6 @@ const Login = () => {
           </div>
           <label>Password</label>
           <div className="input-container">
-            <FaLock className="icon" />
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Insert Your Password"
@@ -61,7 +66,7 @@ const Login = () => {
             </span>
           </div>
           {errorMessage && <p className="error-message">{errorMessage}</p>}
-          <button type="submit">Login</button>
+          <button className="login-button" type="submit">Login</button>
         </form>
       </div>
     </div>

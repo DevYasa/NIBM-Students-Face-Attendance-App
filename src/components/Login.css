@@ -1,103 +1,127 @@
 /* src/components/Login.css */
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('/public/bg.png') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-  }
-  
-  .login-box {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 80px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    align-items: center;
-    width: 350px;
-    height: 280px;
-  }
-  
-  .logo {
-    width: 150px;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
-    color: #ffffff;
-  }
-  
-  .input-container {
-    position: relative;
-    width: 94%;
-    margin-bottom: 20px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px 10px 10px 10px; /* Adjust padding to accommodate the icon */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #007bff;
-  }
-  
-  .password-toggle {
-    position: absolute;
-    left: 310px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #007bff;
-  }
-  
-  button {
-    width: 30%;
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .error-message {
-    color: red;
-    margin-top: -10px;
-    margin-bottom: 20px;
-  }
-  
-  a {
-    display: block;
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('/public/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 370px;
+  left: 25px;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.back-button svg {
+  margin-right: 5px;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+  width: 350px;
+  height: 280px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: small;
+  text-align: left;
+  color: #ffffff;
+}
+
+.input-container {
+  position: relative;
+  width: 94%;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 10px 10px 10px; /* Adjust padding to accommodate the icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.icon {
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+}
+
+.password-toggle {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #007bff;
+}
+
+.login-button {
+  width: 30%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
